@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**/*.php",
+      "src": "api/**/*.php",
       "use": "@vercel/php"
     },
     {
@@ -14,8 +14,8 @@
       "use": "@vercel/static"
     },
     {
-      "src": "api/**/*.php",
-      "use": "@vercel/php"
+      "src": "public/**/*.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -27,11 +27,5 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "env": {
-    "MYSQL_HOST": "@mysql_host",
-    "MYSQL_USERNAME": "@mysql_username",
-    "MYSQL_PASSWORD": "@mysql_password",
-    "MYSQL_DATABASE": "@mysql_database"
-  }
+  ]
 }
