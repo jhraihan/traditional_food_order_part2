@@ -1,0 +1,10 @@
+{
+  "name": "bangladeshi-food-ordering",
+  "version": "1.0.0",
+  "description": "Bangladeshi Traditional Food Ordering System",
+  "scripts": {
+    "dev": "php -S localhost:3000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
